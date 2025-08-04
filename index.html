@@ -1,43 +1,15 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flappy EthOS</title>
-  <style>
-    body { margin: 0; overflow: hidden; background: #000; color: white; font-family: sans-serif; }
-    canvas { display: block; margin: 0 auto; background: #111; }
-    #restartBtn, #pauseBtn {
-      position: absolute;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      display: none;
-      z-index: 1;
-    }
-    #restartBtn {
-      top: 80px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #00ff00;
-      color: black;
-    }
-    #pauseBtn {
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #ffc107;
-      color: black;
-      display: block;
-    }
-  </style>
+    <title>Flappy EthOS</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: black; }
+        canvas { display: block; margin: 0 auto; background: #000; }
+    </style>
 </head>
 <body>
-  <button id="pauseBtn" onclick="togglePause()">Pause</button>
-  <button id="restartBtn" onclick="restartGame()">Reboot the Chain</button>
-  <canvas id="gameCanvas" width="480" height="640"></canvas>
-  <script src="game.js"></script>
+<canvas id="gameCanvas" width="480" height="640"></canvas>
+<script src="game.js"></script>
 </body>
 </html>
