@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flappy EthOS</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: black; font-family: sans-serif; }
+    canvas { display: block; margin: 0 auto; background: #111; }
+    #game-over {
+      color: white;
+      font-size: 2em;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      top: 40%;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="480" height="640"></canvas>
+  <div id="game-over">💥 Reboot the Chain 💥<br><small>Refresh to try again</small></div>
+  <script src="game.js"></script>
+</body>
+</html>
